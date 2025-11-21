@@ -83,7 +83,7 @@ def stop_label_studio(process):
 if __name__ == "__main__":
     # Start the server with default settings
     server_process = start_label_studio(
-        host="127.0.0.1",
+        host="0.0.0.0",
         port=8081,
         data_dir="tmp/"
     )
