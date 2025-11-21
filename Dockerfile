@@ -17,5 +17,13 @@ COPY . .
 # expose the port
 EXPOSE 8000
 
-# command to run label-studio
-CMD ["label-studio", "start", "--host", "0.0.0.0", "--port", "8000"]
+# print running python script
+
+
+# execute the prepare_dataset script
+RUN echo "Running label_studio.py script"
+RUN python prepare_dataset.py
+
+# run the label_studio.py script
+RUN echo "Starting Label Studio"
+CMD ["python", "label_studio.py"]
