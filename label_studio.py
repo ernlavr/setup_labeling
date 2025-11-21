@@ -59,7 +59,7 @@ def start_label_studio(host="127.0.0.1", port=8081, data_dir=None):
                 print(e)
                 
                 retry_count += 1
-                time.sleep(1)
+                time.sleep(5)
         
         print(f"⚠ Server started but couldn't verify it's ready. Check {url}")
         return process
