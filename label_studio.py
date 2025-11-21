@@ -38,8 +38,6 @@ def start_label_studio(host="127.0.0.1", port=8081, data_dir=None):
         # Start the server process
         process = subprocess.Popen(
             cmd,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
             text=True
         )
         
