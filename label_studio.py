@@ -84,7 +84,7 @@ if __name__ == "__main__":
     # Start the server with default settings
     server_process = start_label_studio(
         host="127.0.0.1",
-        port=8081,
+        port=8000,
         data_dir="tmp/"
     )
     
